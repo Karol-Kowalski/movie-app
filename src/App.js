@@ -1,5 +1,6 @@
-import React, { useState } from 'react' 
+import { useState } from 'react' 
 import './App.css';
+import MovieList from './components/MovieList';
 
 const App = () => {
   const [movies, setMovies] = useState([
@@ -29,7 +30,7 @@ const App = () => {
   return (
     <div className="container-fluid movie-app">
       <div className='row'>
-
+        <MovieList movies={movies} />
       </div>
     </div>
   );
