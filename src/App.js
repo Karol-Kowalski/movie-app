@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react' 
+import { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MovieList from './components/MovieList';
 
@@ -22,7 +23,7 @@ const App = () => {
 
   return (
     <div className="container-fluid movie-app">
-      <div className='row'>
+      <div className='row d-flex'>
         <MovieList movies={movies} />
       </div>
     </div>
